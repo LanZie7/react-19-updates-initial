@@ -1,6 +1,6 @@
-import { useImperativeHandle, useRef, forwardRef } from 'react'
+import { useImperativeHandle, useRef } from 'react'
 
-const AppInput = forwardRef(({ ref }) => {
+const AppInput = (({ ref }) => {
   const inputRef = useRef()
 
   useImperativeHandle(ref, () => ({
